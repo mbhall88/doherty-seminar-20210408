@@ -1,6 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "https://doherty-04-21.netlify.app/"
 languageCode = "en-gb"
-title = "My New Hugo Site"
+title = "Doherty Institute Seminar 08/04/2021"
 theme = "reveal-hugo"
 
 [markup.goldmark.renderer]

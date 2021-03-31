@@ -1,21 +1,23 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+This repository hosts the slides for my seminar at the Doherty Institute on 08/04/2021.
 
-- [EBI reveal-hugo template](#ebi-reveal-hugo-template)
+## Live slides: **<https://doherty-04-21.netlify.app/>**
+
+- [Abstract](#abstract)
 - [Install](#install)
 - [Usage](#usage)
   - [Serve](#serve)
-  - [Edit](#edit)
-  - [Maths](#maths)
-  - [Theme/Styling](#themestyling)
-  - [Logo](#logo)
-- [Deploy](#deploy)
 
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+If you would like to serve the slides locally, then read on. If you are interested in
+copying the presentation style, then see my [EBI template][ebi] or my [Nordtheme template][nord].
 
-# EBI reveal-hugo template
+# Abstract
 
-This repository is a template for a minimal EMBL-EBI-themed [reveal.js][revealjs] presentation.  
+Bacterial genomes follow a U-shaped frequency distribution whereby most genomic loci are either rare (accessory) or common (core); the union of these is the pan-genome. The alignable fraction of two genomes from a single species can be low (e.g. 50-70%), such that no single reference genome can access all single nucleotide polymorphisms (SNPs). The pragmatic solution is to choose a close reference, and analyse SNPs only in the core genome. Given much bacterial adaptability hinges on the accessory genome, this is an unsatisfactory limitation.
+We present a novel pan-genome graph structure and algorithms implemented in the software pandora, which approximates a sequenced genome as a recombinant of reference genomes, detects novel variation and then pan-genotypes multiple samples. The method takes fastq as input and outputs a multi-sample VCF with respect to an inferred data-dependent reference genome, and is available at <https://github.com/rmcolq/pandora>.
+
+Constructing a reference graph from 578 E. coli genomes, we analyse a diverse set of 20 E. coli isolates. We show pandora recovers at least 13k more rare SNPs than single-reference based tools, achieves equal or better error rates with Nanopore as with Illumina data, 6-24x lower Nanopore error rates than other tools, and provides a stable framework for analysing diverse samples without reference bias. We also show that our inferred recombinant VCF reference genome is significantly better than simply picking the closest RefSeq reference.
+
+This is a step towards comprehensive cohort analysis of bacterial pan-genomic variation, with potential impacts on genotype/phenotype and epidemiological studies.
 
 # Install
 
@@ -51,143 +53,13 @@ of the repository.
 hugo serve
 ```
 
-In your web browser, navigate to http://localhost:1313/ . Every time you make changes
-this webpage will auto-reload to reflect those changes.
-
-You should see a screen that looks like this
-
-![Template screenshot](static/images/screenshot.png?raw=true)
+In your web browser, navigate to <http://localhost:1313/>
 
 
-## Edit
-
-The [reveal-hugo docs][reveal-hugo] have a great [tutorial][reveal-hugo-tut] to get you
-up and running. There is also a thorough blog post [here][forestry-blog].
-
-The `config.toml` is a central place for defining the settings of your presentation.
-A full list of configurations can be found [here][config].
-
-The slides themselves are within `content/`. `_index.md` is the "root" for your slides
-and you can also define presentation-wide settings in this file too. You can put all of
-your slides in `_index.md` if you wish, but you can likewise break them up into sections.
-Sections will be vertically stacked within the presentation when placed in `content/home/`.
-
-So if we had an `_index.md` file that looked like This
-
-```md
-+++
-title = "My presentation"
-outputs = ["Reveal"]
-+++
-
-# Hello, world!
-
-This is my first slide.
-
----
-
-# Hello Mars!
-
-This is my second slide
-
----
-
-## Mars method
-
-This slide describes the methods and has a pretty plot
-```
-
-We could move the slides about Mars into their own section with the following setup.
-
-`content/_index.md`
-```md
-+++
-title = "My presentation"
-outputs = ["Reveal"]
-+++
-
-# Hello world!
-
-This is my first slide.
-```
-
-`content/home/mars.md`
-```md
-+++
-weight = 10
-+++
-{{% section %}}
-# Hello Mars!
-
-This is my second slide
-
----
-
-## Mars method
-
-This slide describes the methods and has a pretty plot.
-{{% /section %}}
-```
-
-*Note: `weight` is how you define the order of slides. If you have another `.md` file
-with `weight = 11` it will come after `content/home/method.md`. See [this][weight] for more info.*
-
-For more information on sections, see [the docs][sections].
-
-## Maths
-
-Maths rendering with [MathJax][mathjax] is supported provided you have access to an internet connection when initially serving the slides.
-
-In short, you write equations in [Tex/LaTex format][texmaths].
-
-An example of adding an equation to a slide
-
-```md
-## Cool equations
-
-Displayed equations are wrapped in double-\$
-
-$$\frac{n!}{k!(n-k)!} = \binom{n}{k}$$  
-
-Inline equations like $E=mc^2$ are wrapped in single-\$
-
-```
-
-![Equation slide](static/images/maths.png?raw=true)
-
-
-## Theme/Styling
-
-If you would like to make any changes to the font, colours, style etc. then this can be
-done in `static/stylesheets/robot-lung-ebi.css`. The current stylesheet is a copy of
-the [robot-lung][robot-lung] theme, which I have changed some colours to match the EBI
-colour scheme.
-
-## Logo
-
-There are two forms of the EBI logo, which can be found in `static/logos/`. There is one
-for white background presentations (`ebi_white_bg.svg`) and one for dark backgrounds
-(`ebi_dark_bg.svg`).  
-If you would like to make any changes to the size, layout, or which logo is used, then
-instructions can be found in [this short tutorial][reveal-hugo-logo].
-
-
-# Deploy
-
-If you would like to share your presentation with others, or even access it without having to run a local server, the presentation is easily deployable to a static website. [Netlify][netlify] is an easy solution that I have used many times. [It's as simple as connecting your GitHub repository][netlify-docs]. See [here][example] for an example presentation deployed with Netlify.
 
 
 
 [revealjs]: https://revealjs.com/
 [hugo]: https://gohugo.io/
-[reveal-hugo-tut]: https://github.com/dzello/reveal-hugo#tutorial
-[reveal-hugo]: https://github.com/dzello/reveal-hugo
-[forestry-blog]: https://forestry.io/blog/harness-the-power-of-static-to-create-presentations/
-[config]: https://github.com/dzello/reveal-hugo#configuration
-[weight]: https://forestry.io/blog/harness-the-power-of-static-to-create-presentations/#additional-markdown-files
-[robot-lung]: https://revealjs-themes.dzello.com/robot-lung.html#/
-[reveal-hugo-logo]: https://reveal-hugo.dzello.com/logo-example/#/
-[sections]: https://github.com/dzello/reveal-hugo#root-vs-section-presentations
-[netlify]: https://www.netlify.com/
-[netlify-docs]: https://docs.netlify.com/configure-builds/get-started/
-[example]: https://tac2.netlify.app/#/
+[nord]: https://github.com/mbhall88/reveal-hugo-nord
+[ebi]: https://github.com/mbhall88/reveal-hugo-ebi
