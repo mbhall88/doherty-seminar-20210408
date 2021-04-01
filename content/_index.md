@@ -1,24 +1,23 @@
 +++
-title = "My presentation"
+title = "Nucleotide-resolution bacterial pan-genomics with reference graphs"
 outputs = ["Reveal"]
 +++
 
-# Hello world!
+### Nucleotide-resolution bacterial pan-genomics with reference graphs
 
-This is my first slide.
+<br>
 
----
+**Michael B. Hall** $\in$ Iqbal Group @ EMBL-EBI
 
-# Hello Mars!
+<br>
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-This is my second slide
+<!-- Add font awesome icons -->
+<a href="https://github.com/mbhall88" class="fa fa-github"></a>
+<a href="https://twitter.com/mbhall88" class="fa fa-twitter"></a>
+<font color="#007C82">@mbhall88</font>
 
----
-
-## Cool equations
-
-Displayed equations are wrapped in double-\$
-
-$$\frac{n!}{k!(n-k)!} = \binom{n}{k}$$  
-
-Inline equations like $E=mc^2$ are wrapped in single-\$
+<br>
+Slides: <a href="https://doherty-04-21.netlify.app">doherty-04-21.netlify.app</a>  
+<font size="2px">Source: <https://github.com/mbhall88/doherty-seminar-20210408></font>
