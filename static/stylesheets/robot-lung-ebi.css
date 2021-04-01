@@ -149,7 +149,7 @@ body {
 .reveal h5,
 .reveal h6 {
     margin: 0 0 20px 0;
-    color: #141414;
+    color: #007C82;
     font-family: "Rubik", "Roboto", sans-serif;
     font-weight: 700;
     line-height: 1.2;
@@ -444,4 +444,3 @@ progress[value]::-moz-progress-bar {
     border-radius: 2px;
     background-size: 35px 20px, 100% 100%, 100% 100%;
 }
-
