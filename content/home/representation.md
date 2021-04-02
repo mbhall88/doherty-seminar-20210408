@@ -34,6 +34,14 @@ weight = 3
 
 ---
 
+1. <span style="color: red;font-size: 1.25em;">Representation</span>
+2. Single sample inference
+3. Multi sample inference
+4. Evaluation
+5. Results
+
+---
+
 ### Representation of pan-genome reference graphs
 
 <p class="fragment fade-in-then-semi-out">
@@ -74,8 +82,10 @@ Implemented in <https://github.com/iqbal-lab-org/make_prg>
 
 ## Indexing
 
-`(w,k)`-minimizers on a DAG
+$(w,k)$-minimizers on a DAG
 
-<img src="images/kmer-graph.png" height="150" style="border: none;">
+<br>
+
+<img src="images/kmer-graph.png" height="170" style="border: none;">
 
 {{% /section %}}
