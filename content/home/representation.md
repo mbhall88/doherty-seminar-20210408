@@ -38,7 +38,6 @@ weight = 3
 2. Single sample inference
 3. Multi sample inference
 4. Evaluation
-5. Results
 
 ---
 
@@ -87,5 +86,11 @@ $(w,k)$-minimizers on a DAG
 <br>
 
 <img src="images/kmer-graph.png" height="170" style="border: none;">
+
+---
+
+<img src="images/relax.gif" style="border: none;" height="550">
+
+---
 
 {{% /section %}}

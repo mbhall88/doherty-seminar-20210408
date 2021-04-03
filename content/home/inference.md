@@ -8,7 +8,6 @@ weight = 4
 2. <span style="color: red;font-size: 1.25em;">Single sample inference</span>
 3. Multi sample inference
 4. Evaluation
-5. Results
 
 ---
 
@@ -76,7 +75,6 @@ Flag suspicious coverage drops on the ML path
 2. Single sample inference
 3. <span style="color: red;font-size: 1.25em;">Multi sample inference</span>
 4. Evaluation
-5. Results
 
 ---
 
@@ -95,6 +93,10 @@ How do you compare samples if their VCFs are based on different references?
 ### Make small differences look small
 
 <img src="images/pandora-compare.png" style="border: none;">
+
+---
+
+<img src="images/relax.gif" style="border: none;" height="550">
 
 ---
 
