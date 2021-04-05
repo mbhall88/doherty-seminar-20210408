@@ -16,7 +16,7 @@ weight = 5
 - Benchmark precision and recall of SNP calls against single-reference tools
 - Quantify the amount of SNPs recovered using our PanRG approach - i.e. do we solve the single-reference problem?
 
-<p class="fragment fade-in">Complicated as we can't rely on coordinate space</p>
+<p class="fragment fade-in">Complicated, as we can't rely on coordinate space</p>
 
 ---
 
@@ -43,7 +43,7 @@ $$\frac{TP}{TP+FP}=1-FDR=\frac{correct\ calls}{calls\ made}$$
 
 ## Precision
 
-<img src="images/probe-map.png" style="border: none;">
+<img src="images/probe-map.png" height="550" style="border: none;">
 
 ---
 
@@ -91,7 +91,7 @@ $$\frac{TP}{TP+FN}=1-FNR=\frac{correct\ calls}{expected\ calls}$$
 
 **Key deliverable**
 
-<img src="images/recall.png" style="border: none;">
+<img src="images/recall.png" height="500" style="border: none;">
 
 
 ---

@@ -91,6 +91,5 @@ $(w,k)$-minimizers on a DAG
 
 <img src="images/relax.gif" style="border: none;" height="550">
 
----
 
 {{% /section %}}

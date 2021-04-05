@@ -3,7 +3,6 @@ weight = 4
 +++
 {{% section %}}
 
-
 1. Representation
 2. <span style="color: red;font-size: 1.25em;">Single sample inference</span>
 3. Multi sample inference
@@ -30,7 +29,7 @@ weight = 4
 ### Quasi-map reads
 
 <p class="fragment fade-in">Sketch reads - break into $(w,k)$-minimizers</p>
-<p class="fragment fade-in">Index shows where reads have matches (<b>hit</b>)</p>
+<p class="fragment fade-in">Index shows where reads have matches (<b>hits</b>)</p>
 <p class="fragment fade-in">Filter out "isolated" hits - keep clusters</p>
 <p class="fragment fade-in">Store $k$-mer coverage information on index $k$-mer graph</p>
 
@@ -56,9 +55,9 @@ Flag suspicious coverage drops on the ML path
 
 ### Local assembly
 
-<p class="fragment fade-in">Build de Bruijn graph of flagged regions</p>
+<p class="fragment fade-in">Build de Bruijn graph of each flagged region</p>
 <p class="fragment fade-in">Enumerate all "likely" paths in dBG</p>
-<p class="fragment fade-in">Feed new paths back into PanRG and repeat previous steps</p>
+<p class="fragment fade-in">Feed new paths back into local PRGs and repeat previous steps</p>
 
 ---
 
@@ -103,7 +102,7 @@ How do you compare samples if their VCFs are based on different references?
 ## Recap
 
 
-<img src="images/pandora.png" style="border: none;" height="600">
+<img src="images/pandora.png" style="border: none;" height="550">
 
 
 {{% /section %}}
