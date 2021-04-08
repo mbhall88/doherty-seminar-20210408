@@ -16,7 +16,7 @@ outputs = ["Reveal"]
 <!-- Add font awesome icons -->
 <a href="https://github.com/mbhall88" class="fa fa-github"></a>
 <a href="https://twitter.com/mbhall88" class="fa fa-twitter"></a>
-<font color="#007C82">@mbhall88</font>
+<font color="#007C82">@mbhall88 || michael@mbh.sh</font>
 
 <br>
 Slides: <a href="https://doherty-04-21.netlify.app">doherty-04-21.netlify.app</a>  

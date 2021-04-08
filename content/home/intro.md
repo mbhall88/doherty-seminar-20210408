@@ -58,7 +58,7 @@ Restrict to similar genomes with a closely related reference - i.e. outbreak
 Only analyse core genome SNPs and do gene presence/absence for the accessory genome
 </p>
 <p class="fragment fade-up">
-<b>Problem</b>: Given much bacterial adaptability hinges on the accessory genome, these are unsatisfactory limitations.
+<b>Problem</b>: Given much bacterial adaptability hinges on the accessory genome (i.e. AMR, defence), these are unsatisfactory limitations.
 </p>
 
 ---
@@ -66,7 +66,7 @@ Only analyse core genome SNPs and do gene presence/absence for the accessory gen
 ## Our solution
 
 <p class="fragment fade-in-then-semi-out">
-Decompose pan-genome into atomic units (loci) with representative sequences for each
+Decompose pan-genome into atomic units (loci) with representative panel for each
 </p>
 <p class="fragment fade-in-then-semi-out">
 Construct set of reference graphs of all loci

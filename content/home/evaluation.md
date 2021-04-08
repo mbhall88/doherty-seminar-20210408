@@ -61,29 +61,12 @@ $$\frac{TP}{TP+FP}=1-FDR=\frac{correct\ calls}{calls\ made}$$
 <p class="fragment fade-in">Deduplicate pairwise SNPs - is SNP between G1 and G2 the same as the one between G3 and G4?</p>
 <p class="fragment fade-up"><b>HARD!</b></p>
 
----
-
-### Deduplicating pairwise SNPs
-
-<img src="images/pg-variants.png" style="border: none;">
-
-- Pan-genome variant (PgV) are set of pairwise variants of the same colour
-- Restrict to biallelic and one allele per genome for each PgV
-- 618K PgVs between 20 genomes
 
 ---
 
 ### Recall (Sensitivity)
 
 $$\frac{TP}{TP+FN}=1-FNR=\frac{correct\ calls}{expected\ calls}$$
-
----
-
-### Recall (Sensitivity)
-
-<p class="fragment fade-in">Apply VCF calls to reference - mutated ref</p>
-<p class="fragment fade-in">Map PgVs to mutated ref</p>
-<p class="fragment fade-in">Considered TP if all bases in allele mapping agree</p>
 
 ---
 

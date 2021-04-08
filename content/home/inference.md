@@ -21,7 +21,8 @@ weight = 4
 
 ### PanRG-based variant calling
 
-<p class="fragment fade-in-then-semi-out">Find the closest recombinant of your sample</p>
+<p class="fragment fade-in-then-semi-out">No need to pick reference up-front</p>
+<p class="fragment fade-in-then-semi-out">Find the closest recombinant to your sample</p>
 <p class="fragment fade-in">Much better starting point - variation (should be) more succinct</p>
 
 ---
@@ -61,15 +62,6 @@ Flag suspicious coverage drops on the ML path
 
 ---
 
-## Genotyping
-
-- Poisson model of ($k$-mer) coverage
-- Genotype each site (on ML path)
-
-<img src="images/build-prg.png"  height="300" style="border: none;">
-
----
-
 1. Representation
 2. Single sample inference
 3. <span style="color: red;font-size: 1.25em;">Multi sample inference</span>
@@ -86,6 +78,16 @@ How do you compare samples if their VCFs are based on different references?
 <p class="fragment fade-in">Infer ML path for each sample</p>
 <p class="fragment fade-in">For each ML path, increment counts for each path</p>
 <p class="fragment fade-in">Dynamic programming to select most supported path</p>
+<p class="fragment fade-in">Genotype &rarr; VCF</p>
+
+---
+
+## Genotyping
+
+- Poisson model of ($k$-mer) coverage
+- Genotype each site (on ML path)
+
+<img src="images/build-prg.png"  height="300" style="border: none;">
 
 ---
 

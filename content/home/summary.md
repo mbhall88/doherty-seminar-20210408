@@ -9,6 +9,7 @@ weight = 6
 <p class="fragment fade-in">Quasi-map Illumina/Nanopore</p>
 <p class="fragment fade-in">Infer closest recombinant - single or multi sample</p>
 <p class="fragment fade-in">Genotype &rarr; VCF</p>
+<p class="fragment fade-in"><b>Access to many more variants in the accessory genome</b></p>
 
 ---
 
@@ -27,7 +28,7 @@ weight = 6
 <p class="fragment fade-in">Microbial GWAS</p>
 <p class="fragment fade-in">Prospective surveillance with a stable reference that can deal with strain diversity</p>
 <p class="fragment fade-in">Empirical studies of accessory genome (nucleotide-level) variation</p>
-<p class="fragment fade-in">Study of diverse datasets</p>
+<p class="fragment fade-in">Study of diverse datasets - possibly with "personalised PanRG"</p>
 
 ---
 
@@ -72,6 +73,6 @@ Preprint: <https://doi.org/10.1101/2020.11.12.380378>
 <br>
 <a href="https://github.com/mbhall88" class="fa fa-github"></a>
 <a href="https://twitter.com/mbhall88" class="fa fa-twitter"></a>
-<font color="#007C82">@mbhall88</font>
+<font color="#007C82">@mbhall88 || michael@mbh.sh</font>
 
 {{% /section %}}

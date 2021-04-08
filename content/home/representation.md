@@ -68,6 +68,8 @@ Consider all loci independently - let go of structure/ordering
 
 <img src="images/build-prg.png"  height="300" style="border: none;">
 
+Path through the local PRG is a recombinant of the ref panel
+
 ---
 
 ### Constructing local PRGs
@@ -81,7 +83,7 @@ Implemented in <https://github.com/iqbal-lab-org/make_prg>
 
 ## Indexing
 
-$(w,k)$-minimizers on a DAG
+$(w,k)$-minimizers ($k$-mer seeds) on a DAG
 
 <br>
 
